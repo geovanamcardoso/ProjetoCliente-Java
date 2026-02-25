@@ -10,10 +10,9 @@ public class ClienteTest {
        objCliente.setIdade(20);
        objCliente.setAltura(1.65);
 
-        System.out.println(" -- Cliente --");
-        System.out.println("Nome: " + objCliente.getNome());
-        System.out.println("CPF: " + objCliente.getCpf());
-        System.out.println("Idade: " + objCliente.getIdade());
-        System.out.println("Altura: " + objCliente.getAltura());
+        System.out.println(
+                " -- Cliente --" + "\nNome: " + objCliente.getNome() + "\nCPF: " + objCliente.getCpf() +
+                        "\nIdade: " +  objCliente.getIdade() + "\nAltura: " +  objCliente.getAltura()
+        );
     }
 }
