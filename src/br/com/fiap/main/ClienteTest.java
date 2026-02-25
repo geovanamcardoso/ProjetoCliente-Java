@@ -2,16 +2,18 @@ package br.com.fiap.main;
 
 import br.com.fiap.entities.Cliente;
 
+import javax.swing.*;
+
 public class ClienteTest {
     public static void main(String[] args){
        Cliente objCliente = new Cliente();
-       objCliente.setNome("Geovana Maria");
-       objCliente.setCpf("222.222.222-22");
-       objCliente.setIdade(20);
-       objCliente.setAltura(1.65);
+       objCliente.setNome(JOptionPane.showInputDialog("Informe o nome do cliente: "));
+       objCliente.setCpf(JOptionPane.showInputDialog("Informe o CPF do cliente: "));
+       objCliente.setIdade(Integer.parseInt(JOptionPane.showInputDialog("Informe a idade do cliente: ")));
+       objCliente.setAltura(Double.parseDouble(JOptionPane.showInputDialog("Informe a altura do cliente: ")));
 
-        System.out.println(
-                " -- Cliente --" + "\nNome: " + objCliente.getNome() + "\nCPF: " + objCliente.getCpf() +
+        JOptionPane.showMessageDialog(
+                null, " -- Cliente --" + "\nNome: " + objCliente.getNome() + "\nCPF: " + objCliente.getCpf() +
                         "\nIdade: " +  objCliente.getIdade() + "\nAltura: " +  objCliente.getAltura()
         );
     }
