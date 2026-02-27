@@ -37,4 +37,12 @@ public class Cliente {
         return this.altura;
     }
 
+    @Override
+    public String toString() {
+        return "Cliente:" +
+                "\nNome='" + nome + '\'' +
+                "\nCPF='" + cpf + '\'' +
+                "\nIdade=" + idade +
+                "\nAltura=" + altura;
+    }
 }
