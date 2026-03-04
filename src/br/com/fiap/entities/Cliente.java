@@ -4,37 +4,46 @@ public class Cliente {
     private String nome, cpf;
     private int idade;
     private double altura;
+    private Endereco endereco;
 
-    public void setNome(String nome){
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public String getNome(){
-        return this.nome;
+    public String getCpf() {
+        return cpf;
     }
 
-    public void setCpf(String cpf){
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
-    public String getCpf(){
-        return this.cpf;
+    public int getIdade() {
+        return idade;
     }
 
     public void setIdade(int idade) {
         this.idade = idade;
     }
 
-    public int getIdade() {
-        return this.idade;
+    public double getAltura() {
+        return altura;
     }
 
     public void setAltura(double altura) {
         this.altura = altura;
     }
 
-    public double getAltura() {
-        return this.altura;
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
     }
 
     @Override
@@ -43,6 +52,7 @@ public class Cliente {
                 "\nNome='" + nome + '\'' +
                 "\nCPF='" + cpf + '\'' +
                 "\nIdade=" + idade +
-                "\nAltura=" + altura;
+                "\nAltura=" + altura +
+                "\nEndereço=" + endereco;
     }
 }
